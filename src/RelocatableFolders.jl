@@ -1,6 +1,7 @@
 module RelocatableFolders
 
 import Scratch, SHA
+using Base: IOError
 
 export @path
 
