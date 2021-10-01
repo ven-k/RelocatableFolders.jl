@@ -9,7 +9,7 @@ function safe_isfile(file)
     return try
         isfile(file)
     catch err
-        err isa IOError || rethrow()
+        @info err
         false
     end
 end
@@ -18,7 +18,7 @@ function safe_ispath(file)
     return try
         ispath(file)
     catch err
-        err isa IOError || rethrow()
+        @info err
         false
     end
 end
